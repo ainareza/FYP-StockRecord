@@ -12,7 +12,13 @@ managed by the Store Owner as Admin.
 - **Development Environment:** XAMPP
 
 ## Features
-- 
+- User authentication
+- Dashboard
+- CRUD
+- Low stock alert
+- Transactions log
+- Duplicate validation
+- Report generation
 
 ## Installation and Setup
 1. Install a local server environment that supports PHP and MySQL.
