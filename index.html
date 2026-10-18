@@ -1,0 +1,116 @@
+<!-- This is index.hmtl -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Inventory Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navdiv">
+
+            <div class="logo">
+                <a href="index.php">IMS</a>
+            </div>
+
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="categories.php">Categories</a></li>
+                <li><a href="stock_transactions.php">Transactions</a></li>
+                <li><a href="signin.php">Sign In</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome!</h2>
+        <p>Your inventory overview</p>
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Total Items</h3>
+            <p>125</p>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock</h3>
+            <p>8</p>
+        </div>
+
+        <div class="card">
+            <h3>Transactions</h3>
+            <p>342</p>
+        </div>
+
+    </section>
+
+
+    <!-- Recent Transactions -->
+    <section class="recent">
+
+        <h2>Recent Transactions</h2>
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Type</th>
+                <th>Quantity</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>Notebook</td>
+                <td>IN</td>
+                <td>+20</td>
+                <td>10/09/2026</td>
+            </tr>
+
+            <tr>
+                <td>Pen</td>
+                <td>OUT</td>
+                <td>-5</td>
+                <td>10/09/2026</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+
+        <div class="box" onclick="location.href='stock_transactions.php'">
+            <span class="title">Transactions</span>
+            <p class="desc">View your transaction history</p>
+        </div>
+
+        <div class="box" onclick="location.href='products.php'">
+            <span class="title">Low Stock Items</span>
+            <p class="desc">Check your stock levels</p>
+        </div>
+
+        <div class="box" onclick="location.href='report.php'">
+            <span class="title">Report</span>
+            <p class="desc">View your inventory report</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
